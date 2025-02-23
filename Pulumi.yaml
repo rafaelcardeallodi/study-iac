@@ -1,5 +1,5 @@
-name: rocketseat.iac
-description: Projeto IAC Pós Graduação Full Stack Developer 360
+name: study.iac
+description: Projeto IAC
 runtime:
   name: nodejs
   options:

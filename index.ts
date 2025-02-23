@@ -1,20 +1,20 @@
 import * as aws from "@pulumi/aws";
 
-const firstBucket = new aws.s3.BucketV2("primeiro-bucket", {
-    bucket: 'primeiro-bucket-pos-full-stack-360',
+const firstBucket = new aws.s3.BucketV2("first-bucket-iac", {
+    bucket: 'bucket-iac',
     tags: {
         IAC: "true",
     },
 });
 
-const secondBucket = new aws.s3.BucketV2("segundo-bucket", {
-    bucket: 'segundo-bucket-pos-full-stack-360',
+const secondBucket = new aws.s3.BucketV2("second-bucket-iac", {
+    bucket: 'second-bucket-iac',
     tags: {
         IAC: "true",
     },
 });
 
-const ecr = new aws.ecr.Repository("primeiro-ecr", {
+const ecr = new aws.ecr.Repository("first-ecr", {
     name: 'primeiro-ecr',
     imageTagMutability: 'IMMUTABLE',
     tags: {
